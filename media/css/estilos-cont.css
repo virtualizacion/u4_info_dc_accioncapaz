@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    height: 0;
+    font-family: "Lato";
+}
+b{
+	font-family: sans-serif;
+}
+.contenido{
+    background: url(../images/fondo-cont.png) no-repeat;
+    width: 690px;
+    height: 400px;
+}
+.txtRight{
+    width: 370px;
+    height: 310px;
+    position: absolute;
+    margin: 50px 0 0 280px;
+    
+}
+.txtRight h2{
+    color: #000;
+    font-size: 28px;
+    margin: 30px 0;
+}
+.txtRight p{
+    color: #3c3c3c;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
+}
+
+.contenidoImp{
+    background: url(../images/fondo-importante.png) no-repeat;
+    width: 690px;
+    height: 400px;
+}
+.txt1Column{
+    width: 570px;
+    height: 280px;
+    position: absolute;
+    margin: 70px 0 0 65px;
+}
+.txtGrafica{
+    width: 630px;
+    height: 280px;
+    position: absolute;
+    margin: 10px 0 0 45px;
+	line-height: 140%;
+}
+.txtGrafica p{
+	margin: 0;
+}
+.txt1Column p, .txt1Column ul > li{
+    color: #3c3c3c;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
+}
+.contenidoSolo{
+    background: url(../images/fondo-solo.png) no-repeat;
+    width: 690px;
+    height: 400px;
+	line-height: 160%;
+    text-align: justify;
+}
+.cont-T4{
+    width: 580px;
+    height: 370px;
+    position: absolute;
+    margin: 10px 0 0 63px;
+    text-align: justify;
+}
+.cont-T4 h2{
+    color: #000;
+    font-size: 28px;
+    margin: 30px 0;
+}
+.adv{
+    color: #ff0000;
+    font-size: 15px;
+    text-align: center;
+    width: 600px;
+    height: 90px;
+/*    background: rgba(255, 0, 0, 0.3);*/
+    padding: 100px 0 0 0;
+    position: absolute;
+}
+.contInter{
+    width: 600px;
+    height: 255px;
+}
+.banderas{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.flag{
+    margin: 0 8px 0 0;
+    border: .5px solid #CCC;
+    cursor: pointer;
+}
+.txtDescr{
+    text-align: justify;
+    width: 607px;
+    height: 190px;
+    overflow: hidden;
+    z-index: 3;
+    position: absolute;
+}
+.txtDescr b{
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.txt01-T4{
+    background: url(../images/T4-Back01.png) no-repeat;
+    width: 562px;
+    height: 168px;
+    padding: 20px;
+    line-height: 140%;
+}
+.txt02-T4{
+    background: url(../images/T4-Back02.png) no-repeat;
+    width: 562px;
+    height: 168px;
+    padding: 20px;
+    line-height: 140%;
+}
+.txt03-T4{
+    background: url(../images/T4-Back03.png) no-repeat;
+    width: 562px;
+    height: 168px;
+    padding: 20px;
+    line-height: 140%;
+}
+.txt04-T4{
+    background: url(../images/T4-Back04.png) no-repeat;
+    width: 562px;
+    height: 168px;
+    padding: 20px;
+    line-height: 140%;
+}
+
+.contenidoConclu{
+    background: url(../images/fondo-Conclusiones.png) no-repeat;
+    width: 690px;
+    height: 400px;
+    line-height: 140%
+}
+.contenidoCred{
+    background: url(../images/fondo-Creditos.png) no-repeat;
+    width: 690px;
+    height: 400px;
+    line-height: 140%
+}
+.cont-Cred{
+    color: #fff;
+}
+.col1-cred{
+    font-size: 11px;
+    width: 191px;
+    text-align: center;
+    line-height: 150%;
+    margin: 120px 0 0 20px;
+    position: absolute;
+}
+.col2-cred{
+    font-size: 11px;
+    width: 364px;
+/*    background: rgba(0, 255, 147, 0.44);*/
+    text-align: right;
+    line-height: 150%;
+    margin: 120px 0 0 292px;
+    position: absolute;
+}
+
+
+.talkVid{
+	background: url(../images/Cont02-talk.png) no-repeat;
+	width: 602px;
+	height: 141px;
+	margin: 40px 0 0 -30px;
+}
+.talkVid img{
+	margin: -10px 0 0 355px;
+}
+
+

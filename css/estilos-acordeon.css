@@ -1,0 +1,26 @@
+dl{
+    margin: 110px 0 0 130px;
+    width: 830px;
+}
+dt{
+    padding: 10px;
+    text-align: center;
+}
+dt{
+    background: #93278f;
+	color: #fff;
+	border-bottom: 1px solid #581755;
+	border-top: 1px solid #be7dbb;
+	cursor: pointer;
+}
+dd{
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 15px 25px;
+    text-align: justify;
+}
+dd p{
+    margin: 0 0 20px 0;
+}

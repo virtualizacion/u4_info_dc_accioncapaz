@@ -1,0 +1,46 @@
+
+/* Content -> Unordered Lists */
+
+div#content ul#itemContainer {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 560px;
+    height: 370px;
+    /* background: rgba(237, 237, 237, 0.57); */
+    margin: 11px 0 0 68px;
+    position: absolute;
+	line-height: 150%;
+	text-align: justify;
+}
+div#content ul#itemContainer p{
+	
+}
+div#content ul#itemContainer li {
+	display: inline-block;
+	margin: 0; zoom: 1;
+	*display:inline;
+}
+div#content ul#itemContainer ll li img {
+	vertical-align: bottom;
+	width: 125px;
+	height: 125px;
+}
+.listaVin li{
+	text-indent: -16px;
+	width: 100%;
+}
+sup{
+	font-size: 10px;
+	color: #000;
+}
+.nota{
+	font-size: 11px;
+    line-height: 110%;
+    bottom: 0;
+    position: absolute;
+}
+.listLevel2 li{
+	text-indent: -16px;
+    padding: 0 0 0 35px;
+}

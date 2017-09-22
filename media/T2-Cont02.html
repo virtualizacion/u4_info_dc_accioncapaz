@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Páginas</title>
+  
+  <link rel="stylesheet" href="css/stylesPages.css">
+  <link rel="stylesheet" href="css/estilos-cont.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+
+<script>
+/* when document is ready */
+$(function() {
+    /* initiate pugin assigning the desired button labels  */
+    $("div.holder").jPages({
+        containerID : "itemContainer",
+        perPage     : 1,
+        first       : false,
+        previous    : "span.arrowPrev",
+        next        : "span.arrowNext",
+        last        : false
+    });
+});
+</script>
+
+<style type="text/css">
+    body{
+        overflow: hidden;
+    }
+.holder {
+    display: none; 
+}
+.customBtns{
+    position: absolute;
+    z-index: 111;
+    width: 690px;
+    /* height: 50px; */
+    margin: 170px 0 0 0;
+}
+.arrowPrev, .arrowNext{
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+}
+.arrowPrev{
+    background: url('images/arrowP.svg') no-repeat;
+    left: 0px;
+    z-index: 100;
+    width: 30px;
+    height: 40px;
+    margin: -50px 0 0 5px;
+}
+.arrowNext{
+    background: url(images/arrowN.svg) no-repeat;
+    right: 0px;
+    width: 30px;
+    height: 40px;
+    margin: -50px 5px 0 0px;
+}
+
+.arrowPrev.jp-disabled, .arrowNext.jp-disabled{
+    display: none;
+}
+.pgs{
+    width: 690px;
+    height: 400px;
+	background: url(images/fondo-solo.png) no-repeat;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container" class="clearfix">
+
+  <div id="content" class="defaults">
+
+   <!-- navigation holder -->
+    <div class="holder"></div>
+
+    <!-- wrapped custom buttons for easier styling -->
+    <div class="customBtns">
+      <span class="arrowPrev"></span>
+      <span class="arrowNext"></span>
+    </div>
+
+    <!-- item container -->
+    <div class="pgs">
+         <ul id="itemContainer">
+              <li style="margin: 15px 0 0 0;">
+              	<p>Aun cuando el segundo eje temático (acciones puntuales frente al consumo de drogas ilícitas) no ha sido objeto de un desarrollo normativo preciso y específico hasta el momento, no significa que sea menos importante, por el contrario, se debe resaltar que desde hace algunos años, el país ya cuenta con una ley que busca la atención integral de la personas que consumen sustancias psicoactivas en el país y que será uno de los puntos de referencia al momento de hacer efectivas las acciones propuestas en este eje temático.</p>
+			 	<p>La Ley 1566 del 31 de julio del 2012, reconoce en su artículo primero que el consumo, abuso y adicción a las drogas ilícitas es un asunto de salud pública, pero en el que también debe intervenir la familia, la comunidad y los propios individuos afectados, razón por la cual, el abuso y la adicción deben tratarse como una enfermedad que requiere de atención integral por parte del Estado.</p>
+             </li>
+             <li>
+              	<p>Se cuenta con otras dos importantes normas: la Resolución 1841 del 28 de mayo del 2013 expedida por el Ministerio de Salud y Protección Social, por la cual se adopta el Plan Decenal de Salud Pública 2012-2021, que establece como una meta en la reducción del consumo de drogas ilícitas hacia el año 2021, el aumento de la edad promedio de inicio de este consumo, es decir, pasar de los 12 años a los 15.5 años; y, la Resolución 7 del 2015 del Consejo Nacional de Estupefacientes que aprobó el Plan Nacional para la Promoción de la Salud, Prevención y Atención del Consumo de drogas.</p>
+              	<p>Los elementos que componen este punto del Acuerdo de Paz son tal vez los que representan un mayor reto para el Gobierno Nacional, para las FARC-EP y para la sociedad en general, puesto que la lucha contra el narcotráfico es una de las que más muertes le ha dejado al país, además de su estigmatización en el contexto internacional y en la cual se han concentrado valiosos recursos financieros y esfuerzos institucionales en los últimos años para combatirlo.</p>
+              </li>
+              <li>
+              	<p>Tarea difícil que nos corresponde a todos los ciudadanos, pero que podemos llevar a cabo, incidiendo en nuestros entornos mediante el rechazo de toda relación con el problema de las drogas ilícitas y los dineros provenientes del mismo (Acuerdo de Paz, p. 101) ya que, como bien se indica en el video institucional, por parte de la experta de la Oficina del Alto Comisionado de Paz, “si no hay solución al problema de las drogas ilícitas, no se sentarán las bases para construir la paz”.</p>
+              	<div class="talkVid">
+              		<a href="https://www.youtube.com/embed/icQWqmM2El8" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/videoAct.jpg" width="262" height="auto"></a>
+              	</div>
+              </li>
+        </ul>
+    </div>
+
+  </div>
+  <!--! end of #content -->
+</div>
+<!--! end of #container -->
+
+
+</body>
+
+</html>

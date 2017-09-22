@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/estilosInfo.css">
+    <link rel="stylesheet" href="css/jquery.lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/estilos-acordeon.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    <script src="js/infografia.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    
+
+    <script type="text/javascript">
+    jQuery(function($) { 
+        $('.T2cont1').waypoint(function() {
+            $(this).addClass('bounceIn animated delay-4s');
+        },{
+            offset: '70%',
+            triggerOnce: true
+        }); 
+        $('.T2cont2').waypoint(function() {
+            $(this).addClass('bounceIn animated delay-6s');
+        },{
+            offset: '70%',
+            triggerOnce: true
+        });       
+    });
+    </script>
+
+    
+    
+</head>
+<body>
+  <div class="bienvenida" id="START">
+      <div class="imgBienvenida" id="START-IMG">
+          <div class="btnComenzar" id="BT-START"></div>
+      </div>
+  </div>
+   <div class="contenedor">
+        <div class="top">
+            <div class="nombreFranja">Solución al problema de drogas ilícitas</div>
+            <div class="btns">
+                <div class="btnTop">
+                    <a href="media/00-Competencias.html" data-lightbox-gallery="iframe" class="lightbox">
+                        <img src="images/bt_competencias.svg">
+                    </a>
+                </div>
+                <div class="btnTop">
+                    <a href="anexos/U4_DC_AccionCaPaz.pdf" target="_blank" download="Unidad-4·DiplomadoAccionCaPaz.pdf">
+                        <img src="images/bt_pdf.svg">
+                    </a>
+                </div>
+                <div class="btnTop">
+                    <a href="anexos/Glosario.pdf" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;">
+                        <img src="images/bt_glosario.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="infografia">
+           <div class="act1" id="SEC01">
+                <div class="secAct1">Actividad 1</div>
+                <div class="Act1-Titulo">¿Qué pienso sobre el problema de las drogas ilícitas en Colombia?</div>
+                <div class="Act1-Contenido">
+                    <div class="insAct01">
+                        <p>Antes de iniciar la exploración de nuestro contenido, respondamos el cuestionario, con el fin de identificar cuanto conocemos sobre el problema de las drogas ilícitas en Colombia.</p>
+                        <p style="margin: 0;">Revisemos el paso a paso:</p>
+                    </div>
+                    <div class="btn-act1 animated pulse infinite" id="PDF1"><a href="anexos/Act01.pdf" target="_blank" download="Actividad1·UD4.pdf"><img src="images/btn-act1.png"></a></div>
+                    
+                    <div class="acciones-act1">
+                        <ul>
+                            <li>Descargue el formulario de Word con las preguntas.</li>
+                            <li>Responda las preguntas llenando las casillas con X.</li>
+                            <li>Envíe sus respuestas  en el botón actividades de la plataforma.</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           <div class="tema1" id="SEC02">
+            <div class="Tema1-Titulo">Generalidades del problema de las drogas ilícitas</div>
+              <div class="AdvHand-T1"></div>
+               <div class="tema1-acordeon">
+                <dl>
+                    <dt id="AC01-T1">Origen</dt>
+                    <dd>
+                        <p>Si bien el conflicto armado es anterior a la aparición del fenómeno del narcotráfico, no se puede desconocer la estrecha relación que existe entre este y la violencia vivida en Colombia. Uno de los motivos por lo que los cultivos ilícitos surgieron, se extendieron y han sido fuente de ingresos para muchas familias en el país, se debe a las “condiciones de pobreza, marginalidad, débil presencia institucional, además de la existencia de organizaciones criminales dedicadas al narcotráfico” (Acuerdo de Paz, p. 98).</p>
+                    </dd>
+
+                    <dt id="AC02-T1">Informe de UNODC-Colombia</dt>
+                    <dd>
+                        <p>La Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC-Colombia), realiza desde 1999 el monitoreo de los cultivos ilícitos en el país, a la fecha ha producido 17 censos anuales basados en imágenes satelitales, señaló que en el año 2015 hubo un aumento de las cifras en el país, al pasar de 69.000 hectáreas cultivadas en el 2014 a 96.000 hectáreas en el año 2015, es decir, se presentó en solo un año, un 39% de incremento de dichos cultivos (Oficina de las Naciones Unidas contra la Droga y el Delito, 2016).</p>
+                    </dd>
+
+                    <dt id="AC03-T1">Lo que piensan las autoridades nacionales</dt>
+                    <dd>
+                        <p>Esta situación ha preocupado igualmente a las autoridades nacionales, puesto que como lo indicó el ministro Rafael Pardo en una declaración radial efectuada en el 2016, “la existencia de este volumen de cultivos ilícitos hace más difícil la sostenibilidad de la paz. Mientras haya una mata de coca, habrá comprador, grupos que amenazan y usan la violencia” (W Radio, 11 de julio de 2016).</p>
+                        <p>Recordemos que uno de los quince principios para la paz elaborados por Humberto de la Calle Lombana, jefe del equipo negociador del Gobierno Nacional, señala que “el fin del conflicto es crucial para superar el problema de las drogas” (Const., principio 10).</p>
+                    </dd>
+	            </dl>	
+                <script type="text/javascript">
+                   $('dl dd').hide();
+                   $('dl dt').click(function(){
+                      if ($(this).hasClass('activo')) {
+                           $(this).removeClass('activo');
+                           $(this).next().slideUp();
+                      } else {
+                           $('dl dt').removeClass('activo');
+                           $(this).addClass('activo');
+                           $('dl dd').slideUp();
+                           $(this).next().slideDown();
+                      }
+                   });
+                </script>
+               </div>
+           </div>
+           
+           <div class="tema2" id="SEC03">
+               <div class="Tema2-Titulo">Pilares o ejes temáticos de la solución al problema de drogas ilícitas.</div>
+               <div class="T2-IconosCont" id="T2ICS">
+                   <div class="menuIconos">
+                       <img src="images/T2-Bt1.png" class="animated pulse infinite" id="T2-IC01">
+                       <img src="images/T2-Bt2.png" class="animated pulse infinite" id="T2-IC02">
+                       <img src="images/T2-Bt3.png" class="animated pulse infinite" style="margin: 4px 0 0 0;" id="T2-IC03">
+                   </div>
+                   <div class="T2-contIcos">
+                   		<div class="T2cIco" id="C1-IC">
+                   			<p><b>Cultivos Ilícitos</b></p>
+                   			<p>Los <i>cultivos ilícitos</i> desde un enfoque de desarrollo rural. Es decir, que para promover la sustitución voluntaria de cultivos, se deben transformar las condiciones de los territorios de las zonas afectadas para bienestar para toda la comunidad.</p>
+                   		</div>
+                   		<div class="T2cIco" id="C2-IC">
+                   			<p><b>Lucha contra el crimen</b></p>
+                   			<p>La <i>lucha contra el crimen organizado y el narcotráfico</i>. Aun cuando su solución es compleja, se deben reforzar y ampliar los esfuerzos por desarticular el crimen organizado y sus redes, atacando la corrupción, el lavado de activos y el tráfico de insumos. </p>
+                   		</div>
+                   		<div class="T2cIco" id="C3-IC">
+                   			<p><b>Consumo</b></p>
+                   			<p>El <i>consumo con un enfoque de salud pública</i>. Es decir, reconocer e intervenir el consumo como un problema de salud pública, para lo cual se debe trabajar desde la institucionalidad pero con el apoyo de las comunidades, haciendo énfasis en la prevención del consumo, pero sin olvidar la atención al consumidor.</p>
+                   		</div>
+                   </div>
+                   <img src="images/T2-Talk01.png" style="margin: 6px 0 0 10px;" id="T2-T3">
+                   <div class="talk02" id="T2-T4">
+                   		<a href="anexos/Pilares.pdf" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/T2-Pdf.png" id="PDF2" class="animated pulse infinite"></a>
+                   </div>
+                   <img src="images/T2-Talk03.png" style="margin: -27px 0 0 -10px;" id="T2-T5">
+                   <div class="links" id="LINKS">
+                   	<div class="arrow">La puesta en marcha de este plan de acción fue reseñado por los medios de comunicación. Al respecto, consultar en:
+                   	</div>
+                   		<div class="enlaces">
+                   			<a href="http://www.semana.com/nacion/articulo/gobierno-lanza-programa-nacional-integral-de-sustitucion-de-cuiltivos-de-uso-ilicito/513403" target="_blank"><img src="images/T2-Url01.png" class="animated pulse infinite" id="URL01"></a>
+                   			<a href="http://www.eltiempo.com/politica/proceso-de-paz/lanzan-programa-para-sustituir-cultivos-ilicitos-en-colombia-37859" target="_blank"><img src="images/T2-Url02.png" class="animated pulse infinite" id="URL02"></a>
+                   		</div>
+                   </div>
+               </div>
+               
+           </div>
+           
+           <div class="act2" id="SEC04">
+                <div class="secAct2">Actividad 2</div>
+                <div class="Act2-Titulo"></div>
+                <div class="Act2-Contenido">
+                    <div class="insAct02">
+                        <p>Con esta actividad revisaremos cuanto nos importa que se de una solución definitiva al problema de las drogas de uso ilícito en el país en aras de lograr una paz estable y duradera en el marco del proceso de paz.</p>
+                        <p style="margin: 0;">Revisemos el paso a paso:</p>
+                    </div>
+                    
+                    <div class="btn-act2b" id="AC2PDF2"><a href="https://www.youtube.com/embed/QJekYAIentM" onclick="window.open(this.href,'ventana_google','width=800,height=600'); return false;"><img src="images/AC2-Video.png"></a></div>
+                    
+                    <div class="acciones-act2">
+                        <ul>
+                            <li>Busque en internet una imagen que describa lo que usted piensa sobre el problema de las drogas ilícitas.</li>
+                            <li style="margin: 42px 0 0 0;">Partiendo de esta imagen, elabore un mapa mental sobre lo que ha  comprendido del tema (use herramientas digitales o hágalo en una hoja de papel).</li>
+                            <li style="margin: 60px 0 0 0;">Envíe su mapa a la plataforma.</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           
+           <div class="tema3" id="SEC05">
+               <div class="Tema3-Titulo">Pilares o ejes temáticos de la solución al problema de drogas ilícitas.</div>
+               <div class="btnsT3">
+               	<a href="media/T2-Cont01.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Sec2-Bt01.png" class="animated tada infinite" id="T3-BT1"></a>
+               	<a href="media/T2-Cont02.html" data-lightbox-gallery="iframe" class="lightbox"><img src="images/T2-Sec2-Bt02.png" class="animated tada infinite" id="T3-BT2"></a>
+               </div>
+           </div>
+           
+           
+           <div class="act3" id="SEC06">
+                <div class="secAct3">Actividad 1</div>
+                <div class="Act3-Titulo">¿Qué pienso sobre el problema de las drogas ilícitas en Colombia?</div>
+                <div class="Act3-Contenido">
+                    <div class="insAct03">
+                        <p>Antes de iniciar la exploración de nuestro contenido, respondamos el cuestionario, con el fin de identificar cuanto conocemos sobre el problema de las drogas ilícitas en Colombia.</p>
+                        <p style="margin: 0;">Revisemos el paso a paso:</p>
+                    </div>
+                    <div class="btn-act3 animated pulse infinite" id="PDF1"><a href="anexos/Act03.pdf" target="_blank" download="Actividad3·UD4.pdf"><img src="images/btn-act1.png"></a></div>
+                    
+                    <div class="acciones-act3">
+                        <ul>
+                            <li>Descargue el formulario de Word con las preguntas.</li>
+                            <li>Responda las preguntas llenando las casillas con X.</li>
+                            <li>Envíe sus respuestas  en el botón actividades de la plataforma.</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           
+           
+       	</div>
+        <div class="footer">
+            <a href="media/00-Creditos.html" data-lightbox-gallery="image" class="lightbox"><div class="cred">Créditos</div></a>
+        </div>
+   </div>
+</body>
+
+    <!-- SCRIPTS DE LA LIBRERIA DE LOS POP UP -->
+    <script>
+           $(document).ready(function(e) {
+                $('a[data-lightbox-gallery]').iLightbox({
+                    type: 'iframe', //'image', 'inline', 'ajax', 'iframe', 'swf' and 'html'
+                    loop: null,
+                    arrows: null,
+                    closeBtn: true,
+                    title: null,
+                    href: null,
+                    content: null,
+                    beforeShow: function(a, b){ },
+                    onShow: function(a, b){ },
+                    beforeClose: function(){ },
+                    afterClose: function(){ },
+                    onUpdate: function(a){ },
+                });
+           });
+    </script>
+
+</html>
